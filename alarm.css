@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+  /* body {
+        
+        background: linear-gradient(to right, rgb(127, 43, 70), rgb(182, 55, 51), rgb(232, 44, 37));
+    } */
+
+    #background {
+        height: 480px;
+        width: 1100px;
+        margin: auto;
+        background-color: rgba(217, 217, 217, 0.509);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.326);
+    }
+
+    .img {
+        height: 90px;
+        position: absolute;
+        left: 500px;
+        animation-name: alarm;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes alarm {
+        0% {
+            left: 490px;
+            transform: rotate(20deg);
+        }
+
+        100% {
+            right: 510px;
+            transform: rotate(-20deg);
+        }
+    }
+
+    #diff {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        gap: 10px;
+        top: 100px;
+        left: 410px;
+    }
+
+    #p5,
+    #p4,
+    #p3 {
+        height: 60px;
+        width: 80px;
+        font-size: 24px;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    #show {
+        position: absolute;
+        top: 365px;
+        left: 420px;
+    }
+
+    #show input {
+        height: 55px;
+        width: 120px;
+        text-align: center;
+        font-size: 24px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #setalarm {
+        position: absolute;
+        bottom: 0;
+        left: 250px;
+        height: 50px;
+        width: 600px;
+        text-align: center;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(25, 135, 84);
+        color: white;
+    }
+
+    #set {
+        position: absolute;
+        top: 305px;
+        left: 490px;
+        font-size: 28px;
+    }
+
+    #stopalarm {
+        width: 1100px;
+        height: 50px;
+        margin: 10px 0px 10px 80px;
+        background-color: rgba(217, 217, 217, 0.509);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.326);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #stopalarm button {
+        height: 40px;
+        width: 600px;
+        border-radius: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.767);
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        background-color: transparent;
+    }
+
+    #schedule {
+        height: 200px;
+        width: 1100px;
+        margin: auto;
+        background-color: rgba(217, 217, 217, 0.509);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.326);
+        padding: 10px 0px;
+    }
+
+    #schedule1 {
+        height: 200px;
+        width: 220px;
+        background-color: white;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 45px;
+        word-spacing: 30px;
+        
+    }
+
+   
+    .deleteButton:hover {
+        background-color: black;
+        color: white;
+        transition: 2s;
+        border:none
+    }
+    .editButton:hover {
+        background-color: black;
+        color: white;
+        transition: 2s;
+        border:none
+    }
+    .effect{
+        position: absolute;
+        display: flex;
+        height: 770px;
+        width: 1100px;
+        margin: auto;
+        left: 82px;
+        
+       
+    }
+    #jaguar,
+    #jaguar1,
+    #jaguar2,
+    #jaguar3,
+    #jaguar4,
+    #jaguar5,
+    #jaguar6{
+height: 100px;
+width: 100px;
+background-color: white;
+display: flex;
+justify-content: space-between;
+gap: 100px;
+    }
+    #jaguar1{
+    height: 100px;    
+    position: absolute;
+    animation-name: jaguar1;
+    background-color:rgba(130, 223, 155, 0.6) ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar1 {
+
+0%{
+    top: 0;
+}
+100%{
+    top: 115vh;     
+}
+}
+
+#jaguar2{
+    position: absolute;
+    height: 100px;  
+    left: 200px;
+    background-color:rgba(234, 70, 160, 0.6) ;
+    animation-name: jaguar2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar2 {
+
+0%{
+    top: 0%;
+}
+100%{
+    top: 115vh;         
+}
+}
+
+#jaguar3{
+    position: absolute;
+    height: 100px;  
+    left: 400px;
+    background-color:rgba(217, 230, 37, 0.6) ;
+    animation-name: jaguar3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar3 {
+
+0%{
+    top: 0%;
+}
+100%{
+    top: 115vh;       
+}
+}
+
+#jaguar4{
+    position: absolute;
+    height: 100px;  
+    left: 600px;
+    background-color:rgba(121, 200, 234, 0.769) ;
+    animation-name: jaguar4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar4 {
+
+0%{
+    top: 0%;
+}
+100%{
+    top: 115vh;         
+}
+}
+
+#jaguar5{
+    position: absolute;
+    height: 100px;  
+    left: 800px;
+    background-color:rgba(200, 243, 176, 0.45) ;
+    animation-name: jaguar5;
+    animation-duration: 30s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar5 {
+
+0%{
+    top: 0%;
+}
+100%{
+   top: 115vh;     
+}
+}
+
+#jaguar6{
+    position: absolute;
+    height: 100px;  
+    left: 1000px;
+    background-color:rgba(248, 163, 248, 0.6) ;
+    animation-name: jaguar6;
+    animation-duration: 20s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate ;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px inset;
+    
+}   
+
+
+@keyframes jaguar6 {
+
+0%{
+    top: 0%;
+}
+100%{
+   top: 115vh;     
+}
+}

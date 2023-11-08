@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+
+<body>
+    <div class="effect">
+    
+    <div id="jaguar1"></div>
+    <div id="jaguar2"></div>
+    <div id="jaguar3"></div>
+    <div id="jaguar4"></div>
+    <div id="jaguar5"></div>
+    <div id="jaguar6"></div>
+</div>
+
+    <div id="background">
+        <img class="img" src="alarm-clock-icon-vector-21679777-removebg-preview.png" alt="">
+        <div id="diff">
+            <p id="p5"></p>
+            <p id="p4"></p>
+            <p id="p3"></p>
+        </div>
+        <p id="set">Set Alarm</p>
+
+        <div id="show">
+            <input id="show1" type="number" placeholder="00">
+            <input id="show2" type="number" placeholder="00">
+        </div>
+        <button id="setalarm" onclick="setAlarm()">Set Alarm</button>
+    </div>
+    <div id="stopalarm">
+        <button id="holdButton" onclick="holdAlarm()">Stop</button>
+    </div>
+    <audio id="excellentAudio">
+        <source src="mixkit-small-group-cheer-and-applause-518.wav" type="audio/mpeg">
+    </audio>
+    
+    <div id="schedule">
+        <div id="schedule1">
+            <div id="buttonDiv"></div>
+    </div>
+   </div>
+   
+</body>
+
+<script src="alarm.js"></script>
+
+</html>
